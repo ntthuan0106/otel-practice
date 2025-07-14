@@ -21,6 +21,7 @@ ENV OTEL_METRICS_EXPORTER="otlp"
 ENV OTEL_TRACES_EXPORTER="otlp"
 ENV OTEL_EXPORTER_OTLP_ENDPOINT="localhost:4317"
 ENV OTEL_SERVICE_NAME=todoui-flask
+ENV OTEL_EXPORTER_OTLP_INSECURE=true
 
 # Run app.py when the container launches
 # CMD ["flask", "run", "-p", "5000"]
